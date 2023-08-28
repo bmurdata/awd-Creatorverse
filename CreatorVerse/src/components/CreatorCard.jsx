@@ -16,6 +16,7 @@ const CreatorCard = (props) =>  {
       <div className="Card" >
           <img  src={props.creatorImageURL}></img>
           <h2 className="title" style={{ backgroundColor: props.color }}>{props.creatorName}</h2>
+          <p><b>Description:</b> {props.creatorDescription}</p>
           <p><a href={props.creatorURL}><p className="author">Creator Web Page</p></a></p>
           <Link to={'view/'+ props.id}>See Creator Details</Link>
         
