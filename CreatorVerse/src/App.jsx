@@ -1,35 +1,53 @@
 import { useState } from 'react'
+import { useRoutes,Link } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+//import supabase from './client.js'
+import ViewCreators from './pages/ListCreators'
+import CreatorDetails from './pages/CreatorDetails'
+import AddCreator from './pages/NewCreator'
+import EditCreator from './pages/EditCreator'
+const App = () => {
+  const creatorList = [
+  ]
+ 
 
-function App() {
-  const [count, setCount] = useState(0)
+  // Sets up routes
+  let element = useRoutes([
+    {
+      path: "/",
+      element:<ViewCreators data={creatorList}/>
+    },
+    {
+      path:"/view/:id",
+      element: <CreatorDetails data={creatorList} />
+    },
+    {
+      path:'/new',
+      element:<AddCreator></AddCreator>
+    },
+    {
+      path:"/edit/:id",
+      element: <EditCreator data={creatorList} />
+    }
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+  ]);
+console.log('Starting App')
+  return ( 
+
+    <div className="App">
+
+      <div className="header">
+        <h1> Content Creators to Follow</h1>
+        <h2>See important creators in our community!</h2>
+        <Link to="/"><button className="headerBtn"> View Creators 🔍  </button></Link>
+        <Link to="/new"><button className="headerBtn"> Add Creator  </button></Link>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        {element}
+    </div>
+
+  );
 }
 
 export default App
