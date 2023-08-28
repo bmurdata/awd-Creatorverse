@@ -12,7 +12,7 @@ Time spent: 6 hours.
 The following **required** functionality is completed:
 
 <!-- 👉🏿👉🏿👉🏿 Make sure to check off completed functionality below -->
-- [ x **A logical component structure in React is used to create the frontend of the app**
+- [x] **A logical component structure in React is used to create the frontend of the app**
 - [x] **At least five content creators are displayed on the homepage of the app**
 - [x] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
 - [x] **API calls use the async/await design pattern via Axios or fetch()**
@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='https://github.com/bmurdata/awd-Creatorverse/blob/main/preWork.gif' title='Video Walkthrough' width='45%' alt='Video Walkthrough' />
+<img src='https://github.com/bmurdata/awd-Creatorverse/blob/main/preWork2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
