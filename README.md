@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='https://github.com/bmurdata/awd-Creatorverse/blob/main/preWork.gif)' title='Video Walkthrough' width='45%' alt='Video Walkthrough' />
+👉🏿<img src='https://github.com/bmurdata/awd-Creatorverse/blob/main/preWork.gif' title='Video Walkthrough' width='45%' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
